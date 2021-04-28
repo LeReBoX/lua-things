@@ -6,6 +6,6 @@ toolpart.Touched:Connect(function(plr)
     if plr.Name == "Baseplate" then
             
             else
-            plr:Delete()
+            plr:Remove()
             end
 end)
