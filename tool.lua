@@ -3,5 +3,9 @@ tool.Name = "basically a drink"
 local toolpart = Instance.new("Part",tool)
 toolpart.Name = "Handle"
 toolpart.Touched:Connect(function(plr)
-    plr:Remove()
+    if plr.Name == "Baseplate" then
+            
+            else
+            plr:Delete()
+            end
 end)
