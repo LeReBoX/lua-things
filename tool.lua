@@ -3,7 +3,7 @@ tool.Name = "basically a drink"
 local toolpart = Instance.new("Part",tool)
 toolpart.Name = "Handle"
 toolpart.Touched:Connect(function(plr)
-    if plr.Name == "Baseplate" then
+    if plr.Material = Enum.Material.Grass then
             
             else
             plr:Remove()
