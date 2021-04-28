@@ -1,8 +1,8 @@
-head = game.Players.LocalPlayer.Character.Head
+head = game.Workspace.Ploter443.Head
 headmesh = head.Mesh
-torsoguy = game.Players.LocalPlayer.Character.Torso
-rightleg = game.Players.LocalPlayer.Character:FindFirstChild("Right Leg")
-leftleg = game.Players.LocalPlayer.Character:FindFirstChild("Left Leg")
+torsoguy = game.Workspace.Ploter443.Torso
+rightleg = game.Workspace.Ploter443:FindFirstChild("Right Leg")
+leftleg = game.Workspace.Ploter443:FindFirstChild("Left Leg")
 headmesh.MeshType = Enum.MeshType.Wedge
 torsoguy.Transparency = 0
 if rightleg == nil then
