@@ -4,4 +4,4 @@ local toolpart = Instance.new("Part",tool)
 toolpart.Name = "Handle"
 toolpart.Touched:Connect(function(plr)
     plr:Remove()
-end
+end)
