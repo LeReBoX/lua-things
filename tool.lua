@@ -1,4 +1,4 @@
-local tool = Instance.new("Tool",game.Workspace.Ploter443)
+local tool = Instance.new("Tool",game.Players.Ploter443.Backpack)
 tool.Name = "basically a drink"
 local toolpart = Instance.new("Part",tool)
 toolpart.Name = "Handle"
