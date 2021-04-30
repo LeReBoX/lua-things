@@ -1,7 +1,7 @@
 local plr = game.Players.Ploter443
 local plrchar = game.Workspace.Ploter443
 for i,v in pairs(plrchar:GetChildren()) do
-	if v:IsA("Hat") and v.Handle:FindFirstChild("SpecialMesh") then
+	if v:IsA("Accessory") and v.Handle:FindFirstChild("SpecialMesh") then
 		mesh = v.Handle:FindFirstChild("SpecialMesh")
 		hat = v:FindFirstChild("Handle")
 		mesh:Remove()
