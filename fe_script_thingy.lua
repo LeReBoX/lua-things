@@ -10,7 +10,7 @@ for i,v in pairs(plrchar:GetChildren()) do
 end
 end
 plrchar:BreakJoints()
-wait(5)
+wait(7)
 local bPosition = Instance.new("BodyPosition",game.Workspace.RobloxRBaseballCap)
 
 while true do
