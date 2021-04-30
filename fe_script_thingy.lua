@@ -6,6 +6,7 @@ for i,v in pairs(plrchar:GetChildren()) do
 		hat = v.Handle
 		mesh:Remove()
 		hat.CanCollide = true
+		hat.Parent = workspace
 end
 end
 plrchar:BreakJoints()
