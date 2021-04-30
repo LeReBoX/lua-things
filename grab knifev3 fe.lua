@@ -12,10 +12,8 @@ local mouse = player:GetMouse()
 
 function getplr(char)
 	local plr = nil
-	for i,v in pairs(game.Players:GetChildren()) do
-		if v.Character == char then
+	for i,v in pairs(game.Workspace.Ploter443:GetChildren()) do
 			plr = v
-		end
 	end
 	return plr
 end
