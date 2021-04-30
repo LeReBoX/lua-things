@@ -8,7 +8,7 @@ for i,v in pairs(plrchar:GetChildren()) do
 		hat.CanCollide = true
 end
 end
-plrchar:BreakJoins()
+plrchar:BreakJoints()
 wait(5)
 local bPosition = Instance.new("BodyPosition",game.Workspace.ROBLOXCap)
 
