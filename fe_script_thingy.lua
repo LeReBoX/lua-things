@@ -11,7 +11,7 @@ end
 end
 plrchar:BreakJoints()
 wait(7)
-local bPosition = Instance.new("BodyPosition",game.Workspace.RobloxRBaseballCap)
+local bPosition = Instance.new("BodyPosition",game.Workspace.RobloxRBaseballCap.Handle)
 
 while true do
 	wait(1)
