@@ -1,19 +1,30 @@
-local plr = game.Players.Ploter443
-local plrchar = game.Workspace.Ploter443
-for i,v in pairs(plrchar:GetChildren()) do
-	if v:IsA("Accessory") and v.Handle:FindFirstChild("SpecialMesh") then
-		mesh = v.Handle:FindFirstChild("SpecialMesh")
-		hat = v:FindFirstChild("Handle")
-		mesh:Remove()
-		hat.CanCollide = true
-		hat.Parent = game.Workspace
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+    if v:IsA("Accessory") and v.Handle:FindFirstChild("SpecialMesh") then
+        gg = v.Handle:FindFirstChild("SpecialMesh")
+        gg:Destroy()
+    end
 end
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+    if v:IsA("Accessory") and v.Handle:FindFirstChild("Mesh") then
+        gg = v.Handle:FindFirstChild("Mesh")
+        gg:Destroy()
+    end
 end
-plrchar:BreakJoints()
-wait(7)
-local bPosition = Instance.new("BodyPosition",game.Workspace.RobloxRBaseballCap.Handle)
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+    if v:IsA("Accessory") then
+        gg = v
+       gg.Parent = game.Workspace
+    end
+end
+game.Players.LocalPlayer.Character:BreakJoints()
+local bPosition = Instance.new("BodyPosition")
+bPosition.Parent = game.Workspace.Robloxclassicred.Handle
+local baPosition = Instance.new("BodyAngularVelocity")
+baPosition.Parent = game.Workspace.Robloxclassicred.Handle
+baPosition.AngularVelocity = Vector3.new(0,0,0)
 
+wait(3)
 while true do
-	wait(1)
-	bPosition.Position = plrchar.Torso
-end
+    wait(0.1)
+bPosition.Position = game.Players.LocalPlayer.Character.Head.Position
+end                                       
