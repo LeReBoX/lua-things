@@ -1,12 +1,12 @@
 local plr = game.Players.Ploter443
 local plrchar = game.Workspace.Ploter443
 for i,v in pairs(plrchar:GetChildren()) do
-	if v:IsA("Accessory") and v.Handle:FindFirstChild("SpecialMesh" or "Mesh") then
-		mesh = v.Handle:FindFirstChild("SpecialMesh" or "Mesh")
+	if v:IsA("Accessory") and v.Handle:FindFirstChild("SpecialMesh") then
+		mesh = v.Handle:FindFirstChild("SpecialMesh")
 		hat = v.Handle
 		mesh:Remove()
 		hat.CanCollide = true
-		hat.Parent = workspace
+		hat.Parent = game.Workspace
 end
 end
 plrchar:BreakJoints()
