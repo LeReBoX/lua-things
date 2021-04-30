@@ -8,7 +8,7 @@ local finishnum = 1
 local zombiemode = false
 local zombies = {}
 local lastgui = nil
-local mouse = player:GetMouse()
+local mouse = Instance.new("TextButton",player.PlayerGui)
 
 function getplr(char)
 	local plr = nil
@@ -869,7 +869,7 @@ function killz(playa,hitz,kneef,explode,pool,head,charred,override)
 	end	
 end
 
-mouse.KeyDown:connect(function(key)
+mouse.MouseButton1Click:connect(function(key)
 	if key == "t" and mouse.Target then
 		local hum = mouse.Target.Parent:FindFirstChildOfClass('Humanoid')
 		if hum == nil then hum = mouse.Target.Parent.Parent:FindFirstChildOfClass('Humanoid') end
